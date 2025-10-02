@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Caption & Hashtag Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Caption & Hashtag Generator</h1>
+    <label for="niche">Choose a niche</label>
+    <select id="niche">
+      <option value="general">General / Lifestyle</option>
+      <option value="tamil">Tamil Content</option>
+      <option value="music">Music / AI Music</option>
+      <option value="politics">Politics</option>
+      <option value="travel">Travel</option>
+      <option value="fitness">Fitness</option>
+      <option value="tech">Tech / AI</option>
+    </select>
+    <label for="keywords">Keywords (comma separated)</label>
+    <input id="keywords" placeholder="e.g. Chennai, AI, music" />
+    <label for="tone">Caption tone</label>
+    <select id="tone">
+      <option>Casual</option>
+      <option>Funny</option>
+      <option>Inspirational</option>
+      <option>Promotional</option>
+    </select>
+    <button id="generate">Generate</button>
+    <section class="result">
+      <h2>Caption</h2>
+      <textarea id="caption" rows="4" readonly></textarea>
+      <button class="copy" data-target="caption">Copy Caption</button>
+      <h2>Hashtags</h2>
+      <textarea id="hashtags" rows="3" readonly></textarea>
+      <button class="copy" data-target="hashtags">Copy Hashtags</button>
+      <div class="controls">
+        <label><input type="checkbox" id="includePopular" checked> Include some popular tags</label>
+        <label><input type="checkbox" id="limit30" checked> Limit to 30 hashtags</label>
+      </div>
+    </section>
+    <footer><small>Built for quick monetization: add AdSense or affiliate links.</small></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
